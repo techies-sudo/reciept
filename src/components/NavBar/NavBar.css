@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  flex-direction: column;
+  width: 70px;
+  background-color: #f6f6f6;
+  height: 100vh;
+  left: 0;
+}
+.nav-item:last-child {
+  margin-top: auto;
+}
+.navbar:hover > div {
+  width: 200px;
+  transition: width 300s;
+}
+.navbar:hover {
+  width: 200px;
+  transition: width 300ms;
+}
+
+.link-text {
+  display: none;
+  cursor: pointer;
+  transition-delay: 1s display;
+}
+.navbar:hover .link-text {
+  display: block;
+  cursor: pointer;
+  padding-left: 2.5rem;
+  color: black;
+}
+.nav-item:hover {
+  cursor: pointer;
+  background-color: #bbbfca;
+}

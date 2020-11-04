@@ -1,0 +1,119 @@
+.images {
+  animation: bgs 5s;
+  position: inherit;
+  width: 500px;
+  height: 500px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgs {
+  0% {
+    background-image: url("../../assets/image2.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: all 0s ease;
+  }
+  20% {
+    background-image: url("../../assets/image2.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: all 0s ease;
+  }
+  40% {
+    background-image: url("../../assets/image2.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: all 0s ease;
+  }
+  60% {
+    background-image: url("../../assets/image3.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: all 0s ease;
+  }
+  80% {
+    background-image: url("../../assets/image3.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: all 0s ease;
+  }
+  100% {
+    background-image: url("../../assets/image3.png");
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: all 0s ease;
+  }
+}
+
+label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  text-align: center;
+}
+label .label-text {
+  color: white;
+  cursor: text;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4a4a4a;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: inherit;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+/* once you click in the input the input width box animates */
+
+label input:focus {
+  max-width: 100%;
+  width: 300px;
+}
+
+/* the text floats up and turns white */
+
+label input:focus + .label-text {
+  color: #bd9e7b;
+  font-size: 13px;
+  margin-top: 10px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+/* the text floats up during form validation */
+
+label input:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}

@@ -1,0 +1,9 @@
+.dashchilds {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dashchilds > * {
+  margin: 50px 50px 50px 0px;
+}
