@@ -1,9 +1,30 @@
+.maindiv {
+  overflow-x: hidden;
+}
+
 .dashchilds {
   display: flex;
-  float: right;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 .dashchilds > * {
-  margin: 50px 50px 50px 0px;
+  margin: 50px 0px 50px 0px;
+}
+.tiledash {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navigationTiles {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+.status {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0 10px 0;
 }
